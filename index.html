@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Shyam Kiryana Store | Trusted Grocery Store in Nissing, Haryana</title>
+<meta name="description" content="Shree Shyam Kiryana Store — your trusted local store for everyday grocery essentials at Bhaipass Road, Nissing, Haryana. Open 7 AM to 9 PM. Call 9991316003.">
+<meta name="keywords" content="Kiryana Store, Grocery Store Nissing, Shree Shyam Kiryana, general store Haryana, daily essentials Nissing">
+<meta name="author" content="Shree Shyam Kiryana Store">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --h: 150;
+    --green-950: hsl(var(--h) 45% 8%);
+    --green-900: hsl(var(--h) 42% 12%);
+    --green-800: hsl(var(--h) 40% 18%);
+    --green-700: hsl(var(--h) 38% 26%);
+    --green-600: hsl(var(--h) 36% 34%);
+    --green-500: hsl(var(--h) 34% 44%);
+    --green-400: hsl(var(--h) 30% 60%);
+    --green-300: hsl(var(--h) 30% 76%);
+    --green-200: hsl(var(--h) 32% 88%);
+    --green-100: hsl(var(--h) 40% 95%);
+    --green-50:  hsl(var(--h) 45% 98%);
+    --gold: hsl(42 55% 52%);
+    --gold-soft: hsl(42 60% 90%);
+    --white:#ffffff;
+    --shadow-sm: 0 2px 10px hsl(var(--h) 40% 12% / .06);
+    --shadow-md: 0 12px 34px hsl(var(--h) 40% 12% / .10);
+    --shadow-lg: 0 24px 60px hsl(var(--h) 40% 12% / .14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:80px}
+  body{
+    font-family:'Inter',sans-serif;
+    color:var(--green-900);
+    background:var(--green-50);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  .section{padding:92px 0}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--green-600);margin-bottom:16px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+  .sec-title{font-size:clamp(1.9rem,4vw,2.9rem);color:var(--green-900);margin-bottom:14px}
+  .sec-sub{color:var(--green-600);max-width:560px;font-size:1.02rem}
+  .center{text-align:center}
+  .center .eyebrow::before{display:none}
+  .center .sec-sub{margin:0 auto}
+
+  /* NAV */
+  nav{
+    position:sticky;top:0;z-index:100;
+    background:hsl(var(--h) 45% 98% / .82);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--green-200);
+    transition:box-shadow .3s;
+  }
+  nav.scrolled{box-shadow:var(--shadow-sm)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo-mark{
+    width:44px;height:44px;border-radius:12px;
+    background:linear-gradient(150deg,var(--green-600),var(--green-800));
+    color:#fff;display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:900;font-size:1.35rem;
+    box-shadow:inset 0 0 0 1.5px hsl(42 55% 62% / .5);
+  }
+  .logo-text b{display:block;font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;color:var(--green-900);line-height:1.1}
+  .logo-text span{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-500)}
+  .nav-links{display:flex;align-items:center;gap:6px}
+  .nav-links a{
+    padding:9px 16px;font-size:.92rem;font-weight:500;color:var(--green-700);border-radius:8px;transition:.25s;
+  }
+  .nav-links a:hover{background:var(--green-100);color:var(--green-900)}
+  .nav-cta{
+    background:var(--green-800)!important;color:#fff!important;font-weight:600;
+    box-shadow:var(--shadow-sm);
+  }
+  .nav-cta:hover{background:var(--green-900)!important}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{width:24px;height:2px;background:var(--green-800);border-radius:2px;transition:.3s}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:14px 26px;border-radius:12px;font-weight:600;font-size:.96rem;
+    cursor:pointer;border:0;transition:.28s;
+  }
+  .btn-primary{background:var(--green-800);color:#fff;box-shadow:var(--shadow-md)}
+  .btn-primary:hover{background:var(--green-900);transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--green-950)}
+  .btn-gold:hover{filter:brightness(1.06);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--green-800);border:1.5px solid var(--green-300)}
+  .btn-ghost:hover{border-color:var(--green-700);background:var(--green-100)}
+
+  /* HERO */
+  .hero{position:relative;overflow:hidden;background:var(--green-50)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:78px 0 90px}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--green-100);border:1px solid var(--green-200);
+    color:var(--green-700);padding:7px 15px;border-radius:100px;font-size:.8rem;font-weight:600;margin-bottom:22px;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green-500);box-shadow:0 0 0 4px var(--green-200)}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,4rem);color:var(--green-900);font-weight:900}
+  .hero h1 em{font-style:normal;color:var(--green-600);position:relative}
+  .hero .tag{font-family:'Fraunces',serif;font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--gold);font-weight:600;margin-top:8px}
+  .hero p{color:var(--green-600);font-size:1.06rem;margin:20px 0 30px;max-width:480px}
+  .hero-btns{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-media{position:relative}
+  .hero-img{
+    width:100%;height:480px;object-fit:cover;border-radius:24px;
+    box-shadow:var(--shadow-lg);filter:saturate(.85) contrast(1.02);
+  }
+  .hero-media::before{
+    content:"";position:absolute;inset:-16px;border-radius:32px;z-index:-1;
+    background:linear-gradient(160deg,var(--green-200),transparent 60%);
+  }
+  .hero-float{
+    position:absolute;bottom:24px;left:-22px;background:#fff;border-radius:16px;
+    padding:16px 20px;box-shadow:var(--shadow-md);display:flex;gap:14px;align-items:center;border:1px solid var(--green-100);
+  }
+  .hero-float .ic{width:42px;height:42px;border-radius:11px;background:var(--green-100);display:grid;place-items:center;font-size:1.3rem}
+  .hero-float b{display:block;color:var(--green-900);font-family:'Fraunces',serif}
+  .hero-float span{font-size:.8rem;color:var(--green-500)}
+
+  /* strip */
+  .strip{background:var(--green-900);color:var(--green-100)}
+  .strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-around;gap:24px;padding:26px 22px;text-align:center}
+  .strip .item b{font-family:'Fraunces',serif;font-size:1.5rem;color:#fff;display:block}
+  .strip .item span{font-size:.82rem;letter-spacing:.05em;color:var(--green-300)}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .about-img{width:100%;height:400px;object-fit:cover;border-radius:22px;box-shadow:var(--shadow-md)}
+  .about ul{list-style:none;margin-top:24px;display:grid;gap:14px}
+  .about li{display:flex;gap:12px;align-items:flex-start;color:var(--green-700)}
+  .about li .chk{color:var(--green-600);font-weight:700;background:var(--green-100);width:24px;height:24px;border-radius:6px;display:grid;place-items:center;flex-shrink:0;font-size:.85rem}
+
+  /* PRODUCTS */
+  .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+  .card{
+    background:#fff;border-radius:18px;padding:26px 22px;border:1px solid var(--green-100);
+    box-shadow:var(--shadow-sm);transition:.35s;position:relative;overflow:hidden;
+  }
+  .card::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--gold);transition:.4s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--green-200)}
+  .card:hover::after{width:100%}
+  .p-ico{
+    width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-size:1.7rem;margin-bottom:16px;
+    background:var(--green-100);
+  }
+  .card h3{font-size:1.12rem;color:var(--green-900);margin-bottom:6px}
+  .card p{font-size:.88rem;color:var(--green-500)}
+
+  /* WHY */
+  .why{background:var(--green-100)}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+  .why-card{background:#fff;border-radius:18px;padding:30px 24px;text-align:center;box-shadow:var(--shadow-sm);transition:.3s}
+  .why-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+  .why-card .num{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:900;color:var(--green-200);line-height:1}
+  .why-card h3{font-size:1.1rem;margin:10px 0 8px;color:var(--green-900)}
+  .why-card p{font-size:.88rem;color:var(--green-500)}
+
+  /* HOURS + CONTACT split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  .panel{border-radius:22px;padding:44px;box-shadow:var(--shadow-md)}
+  .panel-dark{background:linear-gradient(155deg,var(--green-800),var(--green-950));color:#fff}
+  .panel-dark .eyebrow{color:var(--gold-soft)}
+  .panel-dark h2{color:#fff;font-size:2rem;margin-bottom:20px}
+  .hours-row{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid hsl(0 0% 100% / .12)}
+  .hours-row:last-child{border-bottom:0}
+  .hours-row span{color:var(--green-300)}
+  .hours-row b{color:#fff;font-family:'Fraunces',serif}
+  .open-tag{display:inline-flex;align-items:center;gap:8px;background:hsl(var(--h) 40% 30%);padding:8px 16px;border-radius:100px;font-size:.85rem;margin-top:24px}
+  .open-tag .dot{background:hsl(120 60% 65%);box-shadow:0 0 0 4px hsl(120 60% 65% / .25);animation:pulse 1.8s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+  .panel-light{background:#fff}
+  .panel-light h2{color:var(--green-900);font-size:2rem;margin-bottom:24px}
+  .contact-row{display:flex;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--green-100)}
+  .contact-row:last-of-type{border-bottom:0}
+  .contact-row .ic{width:48px;height:48px;border-radius:12px;background:var(--green-100);display:grid;place-items:center;font-size:1.3rem;flex-shrink:0}
+  .contact-row small{display:block;color:var(--green-500);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+  .contact-row b{color:var(--green-900);font-size:1.08rem;font-family:'Fraunces',serif}
+
+  /* LOCATION */
+  .loc{background:var(--green-100)}
+  .map-box{
+    border-radius:22px;overflow:hidden;box-shadow:var(--shadow-md);margin-top:40px;position:relative;
+    background:#fff;
+  }
+  .map-box iframe{width:100%;height:420px;border:0;display:block;filter:grayscale(.25) contrast(.95)}
+  .map-bar{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding:22px 26px;background:#fff}
+  .map-bar b{font-family:'Fraunces',serif;color:var(--green-900);font-size:1.1rem}
+  .map-bar span{color:var(--green-500);font-size:.9rem}
+
+  /* FOOTER */
+  footer{background:var(--green-950);color:var(--green-300);padding:64px 0 26px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px}
+  footer h4{color:#fff;font-size:1.05rem;margin-bottom:18px}
+  footer .fl{display:flex;align-items:center;gap:12px;margin-bottom:14px;color:var(--green-300);font-size:.92rem}
+  footer p{font-size:.92rem;color:var(--green-400);max-width:300px}
+  footer .logo-text b{color:#fff}
+  footer a:hover{color:var(--gold)}
+  .foot-bottom{border-top:1px solid hsl(var(--h) 30% 20%);padding-top:22px;text-align:center;font-size:.85rem;color:var(--green-400)}
+
+  /* Floating call */
+  .float-call{
+    position:fixed;bottom:22px;right:22px;z-index:200;
+    background:var(--green-800);color:#fff;width:60px;height:60px;border-radius:50%;
+    display:none;place-items:center;font-size:1.5rem;box-shadow:var(--shadow-lg);
+    animation:bob 2.4s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+  /* Reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+  .reveal.show{opacity:1;transform:none}
+
+  /* Mobile menu */
+  .mob-menu{display:none;flex-direction:column;background:#fff;border-bottom:1px solid var(--green-200);padding:8px 22px 18px}
+  .mob-menu a{padding:12px 4px;font-weight:500;color:var(--green-700);border-bottom:1px solid var(--green-100)}
+
+  @media(max-width:960px){
+    .hero-grid,.about-grid,.split{grid-template-columns:1fr}
+    .prod-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .hero-media{order:-1}
+    .hero-img{height:340px}
+    .about-img{height:300px}
+  }
+  @media(max-width:640px){
+    .nav-links{display:none}
+    .burger{display:flex}
+    .section{padding:64px 0}
+    .prod-grid,.why-grid{grid-template-columns:1fr 1fr;gap:14px}
+    .card{padding:20px 16px}
+    .panel{padding:30px 22px}
+    .foot-grid{grid-template-columns:1fr}
+    .float-call{display:grid}
+    .hero-float{left:0;bottom:14px;padding:12px 15px}
+    .why-grid{gap:14px}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo">
+      <div class="logo-mark">S</div>
+      <div class="logo-text">
+        <b>Shree Shyam Kiryana</b>
+        <span>Nissing • Haryana</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:9991316003" class="nav-cta">Call Now</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mob-menu" id="mobMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:9991316003">📞 Call 9991316003</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="hero-badge"><span class="dot"></span> Trusted Local Kiryana Store</span>
+      <h1>Shree Shyam <em>Kiryana</em> Store</h1>
+      <div class="tag">Your Trusted Store for Everyday Essentials</div>
+      <p>Fresh groceries, daily household needs and quality products — all under one roof at Bhaipass Road, Nissing. Serving our neighbourhood with honesty and care.</p>
+      <div class="hero-btns">
+        <a href="tel:9991316003" class="btn btn-primary">📞 Call Now</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bhaipass+Road+Nissing+Haryana" target="_blank" class="btn btn-gold">📍 Get Directions</a>
+        <a href="#products" class="btn btn-ghost">🛒 View Products</a>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=1000&q=80" alt="Shree Shyam Kiryana Store grocery shelves">
+      <div class="hero-float">
+        <div class="ic">🕖</div>
+        <div><b>Open Daily</b><span>7:00 AM – 9:00 PM</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div class="item"><b>8+</b><span>Product Categories</span></div>
+    <div class="item"><b>7AM–9PM</b><span>Open All Days</span></div>
+    <div class="item"><b>100%</b><span>Quality Assured</span></div>
+    <div class="item"><b>Local</b><span>Trusted Store</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <img class="about-img" src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=900&q=80" alt="Grocery shopping essentials">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">About Us</span>
+      <h2 class="sec-title">Your Neighbourhood Store for Daily Needs</h2>
+      <p class="sec-sub">Shree Shyam Kiryana Store is a convenient local store serving families across Nissing with everyday grocery and household essentials. We believe in fair prices, fresh stock and friendly service — the values of a true local shop.</p>
+      <ul>
+        <li><span class="chk">✓</span> A complete range of groceries and daily household items</li>
+        <li><span class="chk">✓</span> Fresh, quality-checked and trusted brands</li>
+        <li><span class="chk">✓</span> Convenient location at Bhaipass Road, Nissing</li>
+        <li><span class="chk">✓</span> Friendly service that our community relies on</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Our Products</span>
+      <h2 class="sec-title">Everything You Need, Every Day</h2>
+      <p class="sec-sub">Explore our wide range of grocery and household categories, all available fresh and in stock.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="card reveal"><div class="p-ico">🌾</div><h3>Groceries</h3><p>Atta, rice, pulses, oil & daily staples.</p></div>
+      <div class="card reveal"><div class="p-ico">🍪</div><h3>Snacks & Biscuits</h3><p>Namkeen, chips, cookies & munchies.</p></div>
+      <div class="card reveal"><div class="p-ico">🥤</div><h3>Beverages</h3><p>Soft drinks, juices, tea & coffee.</p></div>
+      <div class="card reveal"><div class="p-ico">🥛</div><h3>Dairy Products</h3><p>Milk, ghee, paneer, butter & curd.</p></div>
+      <div class="card reveal"><div class="p-ico">🧴</div><h3>Personal Care</h3><p>Soaps, shampoo & hygiene essentials.</p></div>
+      <div class="card reveal"><div class="p-ico">🧹</div><h3>Household Essentials</h3><p>Cleaners, detergents & home supplies.</p></div>
+      <div class="card reveal"><div class="p-ico">🌶️</div><h3>Spices & Masalas</h3><p>Whole & ground spices for every dish.</p></div>
+      <div class="card reveal"><div class="p-ico">🥫</div><h3>Packaged Foods</h3><p>Ready-to-cook & instant food items.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2 class="sec-title">Trusted by Our Community</h2>
+      <p class="sec-sub">A few reasons families across Nissing prefer shopping with us.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="num">01</div><h3>Quality Products</h3><p>Genuine, fresh and quality-checked items from trusted brands.</p></div>
+      <div class="why-card reveal"><div class="num">02</div><h3>Everyday Essentials</h3><p>All your daily grocery and household needs in one place.</p></div>
+      <div class="why-card reveal"><div class="num">03</div><h3>Trusted Local Store</h3><p>Serving the community with honesty and dependable service.</p></div>
+      <div class="why-card reveal"><div class="num">04</div><h3>Convenient Location</h3><p>Easy to reach at Bhaipass Road, Nissing, Haryana.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOURS + CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap split">
+    <div class="panel panel-dark reveal">
+      <span class="eyebrow">Opening Hours</span>
+      <h2>We're Open All Week</h2>
+      <div class="hours-row"><span>Monday – Sunday</span><b>7:00 AM – 9:00 PM</b></div>
+      <div class="hours-row"><span>Opening Time</span><b>7:00 AM</b></div>
+      <div class="hours-row"><span>Closing Time</span><b>9:00 PM</b></div>
+      <div class="open-tag"><span class="dot"></span> Open Now — Visit Us Today</div>
+    </div>
+    <div class="panel panel-light reveal">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Get in Touch</h2>
+      <div class="contact-row">
+        <div class="ic">📞</div>
+        <div><small>Phone</small><b>9991316003</b></div>
+      </div>
+      <div class="contact-row">
+        <div class="ic">📍</div>
+        <div><small>Address</small><b>Bhaipass Road, Nissing, Haryana</b></div>
+      </div>
+      <div class="contact-row">
+        <div class="ic">🕖</div>
+        <div><small>Hours</small><b>7:00 AM – 9:00 PM</b></div>
+      </div>
+      <a href="tel:9991316003" class="btn btn-primary" style="margin-top:26px;width:100%;justify-content:center">📞 Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section loc">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Location</span>
+      <h2 class="sec-title">Find Us in Nissing</h2>
+      <p class="sec-sub">We are conveniently located at Bhaipass Road, Nissing, Haryana.</p>
+    </div>
+    <div class="map-box reveal">
+      <iframe src="https://www.google.com/maps?q=Nissing,Haryana&output=embed" loading="lazy" title="Store location map"></iframe>
+      <div class="map-bar">
+        <div>
+          <b>Shree Shyam Kiryana Store</b><br>
+          <span>Bhaipass Road, Nissing, Haryana</span>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Bhaipass+Road+Nissing+Haryana" target="_blank" class="btn btn-gold">📍 Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:16px">
+          <div class="logo-mark">S</div>
+          <div class="logo-text"><b>Shree Shyam Kiryana</b><span>Nissing • Haryana</span></div>
+        </div>
+        <p>Your trusted local store for everyday grocery and household essentials. Serving Nissing with quality and care.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="fl"><a href="#home">Home</a></div>
+        <div class="fl"><a href="#about">About Us</a></div>
+        <div class="fl"><a href="#products">Products</a></div>
+        <div class="fl"><a href="#contact">Contact</a></div>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <div class="fl">📍 Bhaipass Road, Nissing</div>
+        <div class="fl">📞 <a href="tel:9991316003">9991316003</a></div>
+        <div class="fl">🕖 7:00 AM – 9:00 PM</div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © <span id="yr"></span> Shree Shyam Kiryana Store. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<a href="tel:9991316003" class="float-call" aria-label="Call now">📞</a>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // nav shadow
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
+
+  // mobile menu
+  const burger = document.getElementById('burger');
+  const mob = document.getElementById('mobMenu');
+  burger.addEventListener('click', () => {
+    mob.style.display = mob.style.display === 'flex' ? 'none' : 'flex';
+  });
+  mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.style.display='none'));
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e,i) => {
+      if(e.isIntersecting){
+        setTimeout(()=>e.target.classList.add('show'), (i%4)*80);
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
